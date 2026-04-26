@@ -77,5 +77,26 @@ spring.datasource.password=your_password
 mvn spring-boot:run
 
 ****
-# 4. Build and run
+---
+
+## 🧪 Testing
+
+All REST APIs tested using **Postman**.
+JUnit test cases written to validate service layer logic and ensure zero data discrepancies during concurrent transactions.
+
+---
+
+## 📂 Project Structure
+BankingAPP/
+├── src/
+│   └── main/
+│       └── java/com/banking/
+│           ├── controller/    # REST Controllers
+│           ├── service/       # Business Logic
+│           ├── repository/    # JPA Repositories
+│           ├── model/         # Entity Classes
+│           └── config/        # App Configuration
+├── pom.xml
+└── README.md
+# 4.Build and run
 mvn spring-boot:run
