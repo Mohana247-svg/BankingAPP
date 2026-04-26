@@ -28,3 +28,50 @@ A production-grade **RESTful Banking Backend** built with **Spring Boot**, **Hib
 ---
 
 ## 🏗️ Architecture
+Client (Postman / Frontend)
+        ↓
+  REST Controller Layer
+        ↓
+    Service Layer
+        ↓
+  Repository Layer (JPA)
+        ↓
+    MySQL Database
+
+
+---
+
+## 📡 API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/account/create` | Create a new bank account |
+| GET | `/api/account/{id}/balance` | Check account balance |
+| POST | `/api/transfer` | Transfer funds between accounts |
+| GET | `/api/transactions/{id}` | View transaction history |
+| POST | `/api/auth/login` | User authentication |
+
+---
+
+## ⚙️ How to Run Locally
+
+### Prerequisites
+- Java 8 or above
+- MySQL installed and running
+- Maven
+
+### Steps
+# 1. Clone the repository
+git clone https://github.com/Mohana247-svg/BankingAPP.git
+cd BankingAPP
+
+# 2. Create MySQL database
+CREATE DATABASE banking_db;
+
+# 3. Update application.properties
+spring.datasource.url=jdbc:mysql://localhost:3306/banking_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+# 4. Build and run
+mvn spring-boot:run
