@@ -98,5 +98,15 @@ BankingAPP/
 │           └── config/        # App Configuration
 ├── pom.xml
 └── README.md
+
+
+---
+
+## 👩‍💻 Author
+
+**Mohanachandrika Peruru**
+MCA Graduate | Java Developer | Spring Boot Enthusiast
+📧 p.mohanachandrika@gmail.com
+🔗 LinkedIn: linkedin.com/in/peruru-mohanachandrika
 # 4.Build and run
 mvn spring-boot:run
