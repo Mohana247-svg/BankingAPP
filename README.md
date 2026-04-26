@@ -75,3 +75,7 @@ spring.datasource.password=your_password
 
 # 4. Build and run
 mvn spring-boot:run
+
+****
+# 4. Build and run
+mvn spring-boot:run
